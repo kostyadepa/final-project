@@ -11,90 +11,75 @@ ul li {
     background-image: url("../img/background_1.jpg");
     background-size: 100%;
 }
-
 h1 {
     color: white;
     text-align: center;
     font-size: 42px;
     padding-top: 250px;
 }
-
 #line {
     background-color: white;
     width: 190px;
     height: 1px;
     margin: 0 auto;
 }
-
 h3 {
     color: white;
     text-align: center;
     font-size: 35px;
     padding-top: 5px;
 }
-
 .hr {
    width: 200px;
     height: 1px;
     margin: 0 auto;
     background-color: black;
 }
-
 .hr2 {
     width: 200px;
     height: 1px;
     margin: 0 auto;
     background-color: white;
 }
-
 nav {
     height: 60px;
     width: 100%;
     background-color: white;
 }
-
 #menu {
     padding-top: 25px;
     text-align: center;
 }
-
 #menu li {
     margin-right: 200px;
 }
-
 h2 {
     color: black;
     text-align: center;
     font-size: 35px;
     padding-top: 5px;
 }
-
 #work {
     margin: 10px;
     height: 300px;
     width: 300px;
 }
-
 #portfolio {
     background-color: #e6e6e6;
 }
-
 #my_photo {
     margin: 50px;
     float: left;
 }
- 
 #about {
     height: 625px;
     width: 100%;
 }
-
 #about_me {
     color: black;
     margin: 50px 10px 10px 10px ;
     font-size: 20px;
 }
-
 #contact {
     height: 600px;
     width: 100%;
@@ -102,19 +87,16 @@ h2 {
     background-size: 100%;
     color: white;
 }
-
 footer {
     background-color: #e6e6e6;
     text-align: right;
 }
-
 #contact_me {
     text-align: center;
     margin-top: 35px;
     color: white;
     font-size: 25px;
 }
-
 .cantacts_me {
     text-align: left;
     margin-top: 35px;
