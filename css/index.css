@@ -1,21 +1,80 @@
 * {
     margin: 0;
 }
-ul li {
-    list-style-type: none;
-    display: inline;
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.menu {
+  list-style: none;
+  margin: 0px 0 0px;
+  padding: 10px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu li {display: inline-block;}
+.menu li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu li:last-child:after {content: none;}
+.menu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 2px;
+  margin: 0 90px 0 90px;
+  font-size: 19px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .1s;
+}
+.menu a, .menu-main a:visited {color: #666363;}
+.menu a.current, .menu-main a:hover{color: #878787;}
+.menu a:before,
+.menu a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #878787;
+  transition: .5s;
+}
+.menu a:hover:before, .menu-main .current:before {left: 0;}
+.menu a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu {padding-top: 0;}
+.menu li {display: block;}
+.menu li:after {content: none;}
+.menu a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+#after_meny {
+    background-color: black;
+    margin-bottom: 50px;
 }
 #home {
     height: 600px;
     width: 100%;
     background-image: url("../img/background_1.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
     background-size: 100%;
 }
 h1 {
     color: white;
     text-align: center;
     font-size: 42px;
-    padding-top: 250px;
+    padding-top: 275px;
 }
 #line {
     background-color: white;
@@ -42,7 +101,7 @@ h3 {
     background-color: white;
 }
 nav {
-    height: 60px;
+    height: 45px;
     width: 100%;
     background-color: white;
 }
@@ -59,6 +118,22 @@ h2 {
     font-size: 35px;
     padding-top: 5px;
 }
+#my_photo {
+    float: left;
+    margin: 30px;
+}
+#about {
+    width: 100%;
+}
+#about_me {
+    color: black;
+    margin: 50px 10px 10px 10px ;
+    font-size: 20px;
+    text-indent: 1.5em; 
+    text-align: justify;
+    font-style:italic;
+    line-height: 2;
+}
 #work {
     margin: 10px;
     height: 300px;
@@ -66,36 +141,32 @@ h2 {
 }
 #portfolio {
     background-color: #e6e6e6;
-}
-#my_photo {
-    margin: 50px;
-    float: left;
-}
-#about {
-    height: 625px;
-    width: 100%;
-}
-#about_me {
-    color: black;
-    margin: 50px 10px 10px 10px ;
-    font-size: 20px;
+    height: 800px;
+    padding-bottom: 50px;
 }
 #contact {
     height: 600px;
     width: 100%;
     background-image: url("../img/background_2.png");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
     background-size: 100%;
     color: white;
 }
 footer {
-    background-color: #e6e6e6;
+    background-color: #515362;
     text-align: right;
+    color: #cccccc;
 }
 #contact_me {
-    text-align: center;
-    margin-top: 35px;
+    margin-top: 45px;
     color: white;
     font-size: 25px;
+}
+#if {
+    display: flex;
+    justify-content:center;
 }
 .cantacts_me {
     text-align: left;
@@ -103,6 +174,129 @@ footer {
     color: white;
     font-size: 18px;
 }
-form {
-    float: right;
+#portfolio1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 120px 30px 120px;
+}
+#portfolio2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 120px 30px 120px;
+}
+img.animate1 {
+    opacity: 0.35;
+    -moz-transition: all 1s ease-in-out; 
+    -webkit-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out; 
+}
+img.animate1:hover {
+    opacity: 1;
+}
+img.animate2 {
+    opacity: 0.35;
+    -moz-transition: all 1s ease-in-out; 
+    -webkit-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out; 
+}
+img.animate2:hover {
+    opacity: 1;
+}
+img.animate3 {
+    opacity: 0.35;
+    -moz-transition: all 1s ease-in-out; 
+    -webkit-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out; 
+}
+img.animate3:hover {
+    opacity: 1;
+}
+img.animate4 {
+    opacity: 0.35;
+    -moz-transition: all 1s ease-in-out; 
+    -webkit-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out; 
+}
+img.animate4:hover {
+    opacity: 1;
+}
+img.animate5 {
+    opacity: 0.35;
+    -moz-transition: all 1s ease-in-out; 
+    -webkit-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out; 
+}
+img.animate5:hover {
+    opacity: 1;
+}
+img.animate6 {
+    opacity: 0.35;
+    -moz-transition: all 1s ease-in-out; 
+    -webkit-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out; 
+}
+img.animate6:hover {
+    opacity: 1;
+}
+#cont {
+    padding-top: 30px;
+}
+#portf {
+    padding-top: 50px;
+}
+#forma {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 65px;
+}
+#form1{
+    margin-right: 15px;
+    
+}
+#form2{
+    margin-right: 60px;
+}
+#coment {
+    display: flex;
+    justify-content:space-between;
+    margin-right: 60px;
+}
+#address {
+  display: flex; 
+  align-items:flex-start;
+  flex-direction:column;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+.cantacts_me {
+ font-size: 25px;
+}
+#submit {
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 20px;
+  margin-right: 335px;
+}
+#knopka {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #595959; /* фон кнопки */
+  padding: .35em 2.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+} 
+#knopka:hover { background: #8c8c8c; } /* при наведении курсора мышки */
+#knopka:active { background: #595959; } /* при нажатии */
+#logo {
+  display: flex;
+  justify-content:space-between;
+  margin-top: 45px;
+  margin-left: 400px;
+  margin-right:400px;
 }
