@@ -100,11 +100,6 @@ h3 {
     margin: 0 auto;
     background-color: white;
 }
-nav {
-    height: 45px;
-    width: 100%;
-    background-color: white;
-}
 #menu {
     padding-top: 25px;
     text-align: center;
@@ -302,15 +297,14 @@ img.animate6:hover {
   margin-right:400px;
 }
 
-
-nav ul li {
-    display: inline-block;
-}
 nav {
+    height: 45px;
     position: fixed;
     background-color: white;
-    width: 100%
+    z-index: 1;
+    width: 100%;
 }
+
 .bottom {
     bottom: 0;    
 }
